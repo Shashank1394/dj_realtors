@@ -1,31 +1,15 @@
 "use client";
+import { useRef } from "react";
+import { useOnScreen } from "@/hooks/useOnScreen";
 
-import { useEffect, useState } from "react";
-
-const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const footer = document.getElementById("footer");
-      if (footer) {
-        const rect = footer.getBoundingClientRect();
-        if (rect.top < window.innerHeight) {
-          setIsVisible(true);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+export default function Footer() {
+  const footerRef = useRef<HTMLDivElement>(null);
+  const isVisible = useOnScreen(footerRef);
 
   return (
     <footer
-      id="footer"
-      className={`px-5 py-12 bg-white border-t shadow-inner transition-opacity duration-1000 ${
+      ref={footerRef}
+      className={`px-5 py-12 bg-white shadow-inner transition-opacity duration-1000 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -72,13 +56,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
       {/* Footer Bottom Text */}
       <div className="mt-10 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} DJ Realtors. All rights reserved.
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
