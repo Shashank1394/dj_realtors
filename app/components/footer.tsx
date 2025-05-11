@@ -24,8 +24,7 @@ export default function Footer() {
             ipsa molestiae dignissimos tempora earum?
           </p>
         </div>
-
-        {/* Contact Section */}
+        x{/* Contact Section */}
         <div className="md:col-span-5">
           <h2 className="text-gray-800 text-xl font-bold mb-4">Contact</h2>
           <ul className="space-y-2">
