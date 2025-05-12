@@ -8,7 +8,7 @@ const HomePage = () => {
           src="/dj_realtors/homeImage.jpg"
           alt="Home Image"
           fill
-          style={{ objectFit: "contain" }}
+          objectFit="contain"
           className="rounded"
         />
         <div className="absolute inset-0 flex justify-center items-center">
