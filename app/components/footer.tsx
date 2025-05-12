@@ -1,18 +1,6 @@
-"use client";
-import { useRef } from "react";
-import { useOnScreen } from "@/hooks/useOnScreen";
-
 export default function Footer() {
-  const footerRef = useRef<HTMLDivElement>(null);
-  const isVisible = useOnScreen(footerRef);
-
   return (
-    <footer
-      ref={footerRef}
-      className={`px-5 py-12 bg-white shadow-inner transition-opacity duration-1000 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-    >
+    <footer className="px-5 py-12 bg-white shadow-inner">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto w-full text-left">
         {/* About Section */}
         <div className="md:col-span-7">
