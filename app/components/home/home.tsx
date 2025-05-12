@@ -5,7 +5,7 @@ const HomePage = () => {
     <div className="h-[250px] bg-[#063356] flex flex-col items-center justify-start">
       <div className="relative w-[375px] h-[250px] md:w-[600px] md:h-[400px] lg:w-[800px] lg:h-[500px]">
         <Image
-          src="/homeImage.jpg"
+          src="/dj_realtors/homeImage.jpg"
           alt="Home Image"
           fill
           style={{ objectFit: "contain" }}

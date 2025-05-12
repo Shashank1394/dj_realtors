@@ -6,7 +6,7 @@ const Cards = () => {
       <div className="bg-[#BFE0FF] w-[241px] h-[149px]">
         <div className="flex justify-left items-center gap-2 mt-4 ml-3">
           <Image
-            src="/verticals/corporate.png"
+            src="/dj_realtors/verticals/corporate.png"
             alt="Corporate Services"
             width={40}
             height={40}
@@ -22,7 +22,7 @@ const Cards = () => {
       <div className="bg-[#BFE0FF] w-[241px] h-[149px]">
         <div className="flex justify-left items-center gap-2 mt-4 ml-3">
           <Image
-            src="/verticals/logistics.png"
+            src="/dj_realtors/verticals/logistics.png"
             alt="Logistics and Warehouse"
             width={40}
             height={40}
@@ -38,7 +38,7 @@ const Cards = () => {
       <div className="bg-[#BFE0FF] w-[241px] h-[149px]">
         <div className="flex justify-left items-center gap-2 mt-4 ml-3">
           <Image
-            src="/verticals/retail.png"
+            src="/dj_realtors/verticals/retail.png"
             alt="Retial Services"
             width={40}
             height={40}
@@ -55,7 +55,7 @@ const Cards = () => {
       <div className="bg-[#BFE0FF] w-[241px] h-[149px]">
         <div className="flex justify-left items-center gap-2 mt-4 ml-3">
           <Image
-            src="/verticals/land.png"
+            src="/dj_realtors/verticals/land.png"
             alt="Land Services"
             width={40}
             height={40}
@@ -71,7 +71,7 @@ const Cards = () => {
       <div className="bg-[#BFE0FF] w-[241px] h-[149px]">
         <div className="flex justify-left items-center gap-2 mt-4 ml-3">
           <Image
-            src="/verticals/investment.png"
+            src="/dj_realtors/verticals/investment.png"
             alt="Investment Preleased"
             width={40}
             height={40}
@@ -87,7 +87,7 @@ const Cards = () => {
       <div className="bg-[#BFE0FF] w-[241px] h-[149px]">
         <div className="flex justify-left items-center gap-2 mt-4 ml-3">
           <Image
-            src="/verticals/residential.png"
+            src="/dj_realtors/verticals/residential.png"
             alt="Premium Residential"
             width={40}
             height={40}
