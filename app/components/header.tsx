@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="px-5 bg-[#012A4A] shadow-md">
       <nav className="flex items-center justify-between py-4 text-white">
-        <Link href="/" className="flex items-center space-x-2 text-2xl">
+        <Link href="/" className="flex items-center space-x-2 text-xl">
           {/* SVG Icon */}
           <span className="w-[44px] h-[29px]">
             <svg
