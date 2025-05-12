@@ -107,8 +107,8 @@ const About = () => {
         </h3>
         <p className="text-sm text-center mt-3 p-4 font-light">
           Expert in Retail Real Estate Development & Leasing | 15+ Years of
-          Experience Prashant Nahar leads DJ Realtors LLP's retail vertical with
-          over 15 years of core expertise in retail property development,
+          Experience Prashant Nahar leads DJ Realtors LLP&apos;s retail vertical
+          with over 15 years of core expertise in retail property development,
           leasing, and strategic advisory. Known for connecting top brands with
           premium, high-visibility retail spaces, he brings deep market
           knowledge and a results-driven, client-first approach. His work
@@ -141,7 +141,7 @@ const About = () => {
         </h3>
         <p className="text-sm text-center mt-3 p-4 font-light">
           Expert in Land, Farm Plots & Bungalow Plot Transactions Harshad Kotkar
-          leads DJ Realtors's land and plot vertical with deep expertise in
+          leads DJ Realtors&apos;s land and plot vertical with deep expertise in
           farmland, bungalow plots, and building plot sales and acquisitions.
           With years of focused experience, he brings sharp market insight, a
           strong industry network, and a reputation for transparent,
