@@ -155,7 +155,7 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="px-5 bg-[#012A4A] shadow-md sticky top-0 z-50">
+    <header className="px-5 bg-[#012A4A] shadow-md z-50">
       <nav className="flex items-center justify-between py-4 text-white">
         <Link href="/" className="flex items-center space-x-2 text-xl">
           <span className="w-[44px] h-[29px]" aria-hidden="true">
