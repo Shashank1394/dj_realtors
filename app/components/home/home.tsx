@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header from "../header";
 
 // const HomePage = () => {
 //   return (
