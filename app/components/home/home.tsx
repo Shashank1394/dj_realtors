@@ -79,7 +79,7 @@ const HomePage = () => {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-6 w-full flex justify-center z-30">
+      <div className="absolute bottom-20 sm:bottom-6 w-full flex justify-center z-30">
         <a href="#verticals" aria-label="Scroll to next section">
           <svg
             className="w-8 h-8 text-white animate-bounce"
