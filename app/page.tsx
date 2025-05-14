@@ -7,7 +7,6 @@ import Verticals from "./components/home/verticals";
 const Home = () => {
   return (
     <>
-      <Header />
       <HomePage />
       <Verticals />
       <About />
