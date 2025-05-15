@@ -1,51 +1,86 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
-    <footer className="px-5 py-12 bg-white shadow-inner">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto w-full text-left">
-        {/* About Section */}
-        <div className="md:col-span-7">
-          <h2 className="text-gray-800 text-xl font-bold mb-4">About</h2>
-          <p className="text-gray-600 text-sm leading-relaxed max-w-md tracking-wide">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-            excepturi quaerat saepe fuga cupiditate temporibus reprehenderit
-            magnam odit inventore. Ad voluptatum sunt, sit consequatur veniam
-            ipsa molestiae dignissimos tempora earum?
-          </p>
+    <footer className="bg-[#012A4A] text-white pt-10 pb-4 md:px-20 text-sm">
+      <div className="flex flex-col md:flex-row justify-between items-baseline md:items-center px-6 gap-10 mb-6">
+        {/* Logo and CIRIL section */}
+        <div className="flex gap-6 justify-center items-center">
+          {/* DJ Realtors Logo */}
+          <div className="w-36 h-auto">
+            <Image
+              src="/dj_realtors/footer/dj_logo.jpg"
+              alt="DJ Realtors Logo"
+              width={150}
+              height={60}
+              className="object-contain"
+            />
+          </div>
+
+          {/* CIRIL Logo */}
+          <div className="w-24 h-auto">
+            <Image
+              src="/dj_realtors/footer/ciril_logo.png"
+              alt="CIRIL Logo"
+              width={100}
+              height={40}
+              className="object-contain"
+            />
+          </div>
         </div>
-        x{/* Contact Section */}
-        <div className="md:col-span-5">
-          <h2 className="text-gray-800 text-xl font-bold mb-4">Contact</h2>
-          <ul className="space-y-2">
-            <li className="text-gray-600 text-sm flex items-start gap-2">
-              📍 <span>123 Main Street, Mumbai, India</span>
-            </li>
-            <li className="text-gray-600 text-sm flex items-start gap-2">
-              📞
-              <a
-                href="tel:+919876543210"
-                className="hover:text-blue-600 hover:underline hover:brightness-110 transition"
-              >
-                +91 98765 43210
-              </a>
-            </li>
-            <li className="text-gray-600 text-sm flex items-start gap-2">
-              ✉️
-              <a
-                href="mailto:info@djrealtors.com"
-                className="hover:text-blue-600 hover:underline hover:brightness-110 transition"
-              >
-                info@djrealtors.com
-              </a>
-            </li>
-            <li className="text-gray-600 text-sm flex items-start gap-2">
-              🕒 <span>Mon – Fri: 9:00 AM – 6:00 PM</span>
-            </li>
-          </ul>
+
+        {/* Address Section */}
+        <div className="flex flex-col md:flex-row justify-between w-full md:w-2/3 gap-10">
+          <div className="text-white max-w-sm">
+            <h3 className="text-base font-semibold mb-2 leading-0">Address</h3>
+            <p>
+              4, Ashirwad Apartment, Sharanpur road,
+              <br />
+              Canada corner, Nashik (M.S) India
+              <br />
+              Pincode - 422002
+            </p>
+          </div>
+
+          {/* Contact Info */}
+          <div className="text-white">
+            <h3 className="text-base font-semibold mb-2 leading-0">
+              Contact Info
+            </h3>
+            <ul className="space-y-1">
+              <li>
+                DJ Dhamne:{" "}
+                <a href="tel:+919423930253" className="hover:underline">
+                  +91 9423930253
+                </a>
+              </li>
+              <li>
+                Shrirang Bhadane:{" "}
+                <a href="tel:+919921210123" className="hover:underline">
+                  +91 9921210123
+                </a>
+              </li>
+              <li>
+                Prashant Nahar:{" "}
+                <a href="tel:+919822770646" className="hover:underline">
+                  +91 9822770646
+                </a>
+              </li>
+              <li>
+                Harshad Kotkar:{" "}
+                <a href="tel:+917083111300" className="hover:underline">
+                  +91 7083111300
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      {/* Footer Bottom Text */}
-      <div className="mt-10 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} DJ Realtors. All rights reserved.
+
+      {/* Bottom Strip */}
+      <div className="border-t border-gray-400 pt-4 text-center text-[13px]">
+        ©2025 - All rights reserved by DJ Realtors | Website Designed and
+        Developed by <span className="font-bold">Shapes Art & Design</span>
       </div>
     </footer>
   );

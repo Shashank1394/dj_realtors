@@ -1,3 +1,4 @@
+import Footer from "./components/footer";
 import Header from "./components/header";
 import About from "./components/home/about";
 import Ciril from "./components/home/ciril";
@@ -14,6 +15,7 @@ const Home = () => {
       <About />
       <Clients />
       <Ciril />
+      <Footer />
     </>
   );
 };

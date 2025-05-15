@@ -1,6 +1,6 @@
 const Ciril = () => {
   return (
-    <div className="h-fit bg-[#DEE7FF] my-8 py-8">
+    <div className="h-fit bg-[#DEE7FF] mt-8 py-8">
       <div className="flex items-center justify-center mx-20 pb-8">
         <div className="flex-grow border-t border-black"></div>
         <span
