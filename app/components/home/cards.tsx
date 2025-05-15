@@ -13,7 +13,7 @@ const Card = ({ imageSrc, altText, title, description }: CardProps) => {
     <div className="bg-[#BFE0FF] min-h-[149px] max-h-[260px] max-w-[300px] p-6 rounded-md md:min-w-[300px] md:min-h-[250px] lg:min-w-[450px] lg:min-h-[300px]">
       <div className="flex items-center gap-2 mb-3">
         <Image src={imageSrc} alt={altText} width={40} height={40} />
-        <h2 className="font-bold pt-4">{title}</h2>
+        <h2 className="font-bold md:pt-4 pt-2">{title}</h2>
       </div>
       <p>{description}</p>
     </div>
@@ -68,7 +68,7 @@ const Cards = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-4 py-8 text-lg lg:text-2xl justify-center items-center mx-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-4 py-8 text-lg lg:text-2xl justify-center items-center md:mx-10">
       {cardData.map(({ imageSrc, altText, title, description }) => (
         <Card
           key={title}
