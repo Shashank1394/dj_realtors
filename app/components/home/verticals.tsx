@@ -13,7 +13,9 @@ const Verticals = () => {
         </span>
         <div className="flex-grow border-t border-black"></div>
       </div>
-      <Cards />
+      <div className="flex justify-around items-center">
+        <Cards />
+      </div>
     </div>
   );
 };
