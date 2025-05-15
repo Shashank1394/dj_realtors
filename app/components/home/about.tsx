@@ -24,8 +24,10 @@ const About = () => {
             src="/dj_realtors/about/dj_dhamne.png"
             alt="DJ Dhamne"
             fill
-            objectFit="cover"
-            objectPosition="top center"
+            style={{
+              objectFit: "cover",
+              objectPosition: "top center",
+            }}
           />
         </div>
         <h2 className="font-bold mt-4 leading-none">DJ DHAMNE</h2>
@@ -61,8 +63,10 @@ const About = () => {
             src="/dj_realtors/about/shrirang_bhadane.png"
             alt="Shrirang Bhadane"
             fill
-            objectFit="cover"
-            objectPosition="top center"
+            style={{
+              objectFit: "cover",
+              objectPosition: "top center",
+            }}
           />
         </div>
         <h2 className="font-bold mt-4 leading-none">SHRIRANG BHADANE</h2>
@@ -97,8 +101,10 @@ const About = () => {
             src="/dj_realtors/about/prashant_nahar.png"
             alt="Prashant Nahar"
             fill
-            objectFit="cover"
-            objectPosition="top center"
+            style={{
+              objectFit: "cover",
+              objectPosition: "top center",
+            }}
           />
         </div>
         <h2 className="font-bold mt-4 leading-none">PRASHANT NAHAR</h2>
@@ -131,8 +137,10 @@ const About = () => {
             src="/dj_realtors/about/harshad_kotkar.png"
             alt="Harshad Kotkar"
             fill
-            objectFit="cover"
-            objectPosition="top center"
+            style={{
+              objectFit: "cover",
+              objectPosition: "top center",
+            }}
           />
         </div>
         <h2 className="font-bold mt-4 leading-none">HARSHAD KOTKAR</h2>
