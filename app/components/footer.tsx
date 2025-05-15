@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#012A4A] text-white pt-10 pb-4 md:px-20 text-sm">
-      <div className="flex flex-col md:flex-row justify-between items-baseline md:items-center px-6 gap-10 mb-6">
+    <footer className="bg-[#012A4A] text-white pt-10 px-6 pb-4 md:px-20 text-sm">
+      <div className="flex flex-col sm:flex-row justify-between items-baseline md:items-center gap-10 mb-6">
         {/* Logo and CIRIL section */}
-        <div className="flex gap-6 justify-center items-center">
+        <div className="flex gap-6 justify-center items-center sm:flex-col">
           {/* DJ Realtors Logo */}
           <div className="w-36 h-auto">
             <Image
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
 
         {/* Address Section */}
-        <div className="flex flex-col md:flex-row justify-between w-full md:w-2/3 gap-10">
+        <div className="flex flex-col md:flex-row justify-between md:justify-end w-full md:w-2/3 gap-10">
           <div className="text-white max-w-sm">
             <h3 className="text-base font-semibold mb-2 leading-0">Address</h3>
             <p>
