@@ -2,75 +2,82 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <div className="h-fit">
-      <div className="flex items-center justify-center my-8 mx-20">
+    <div className="h-fit w-full px-4 sm:px-8 lg:px-20 py-10">
+      {/* Section Title */}
+      <div className="flex items-center justify-center mb-10">
         <div className="flex-grow border-t border-black"></div>
         <span
-          className="px-2 text-sm text-[#1d3557] tracking-wide"
+          className="px-4 text-sm sm:text-base text-[#1d3557] tracking-wide whitespace-nowrap"
           id="verticals"
         >
           ABOUT US
         </span>
         <div className="flex-grow border-t border-black"></div>
       </div>
-      <div className="m-8">
-        <Image
-          src={"/dj_realtors/footer/dj_logo.jpg"}
-          alt="dj logo"
-          width={200}
-          height={200}
-        />
-        <div className="mt-10 text-sm font-base leading-6">
-          <p>Welcome to DJ Realtors - Your Trusted Real Estate Partner</p>
+
+      {/* Main Content Block */}
+      <div className="flex flex-col gap-10">
+        {/* Logo */}
+        <div className="flex justify-center">
+          <Image
+            src="/dj_realtors/footer/dj_logo.jpg"
+            alt="dj logo"
+            width={200}
+            height={200}
+            className="rounded-md object-contain"
+          />
+        </div>
+
+        {/* About Content */}
+        <div className="text-sm sm:text-base leading-6 text-gray-800 space-y-4 max-w-4xl mx-auto">
+          <p className="font-semibold text-center sm:text-left text-[#1d3557]">
+            Welcome to DJ Realtors - Your Trusted Real Estate Partner
+          </p>
           <p>
             At DJ Realtors, we offer end-to-end real estate solutions across
             residential, commercial, industrial, and agricultural segments.
-            Whether you&apos;re buying, investing, or developing, we provide
-            expert guidance and tailored strategies to help you succeed.
+            Whether you're buying, investing, or developing, we provide expert
+            guidance and tailored strategies to help you succeed.
           </p>
-          <p>Why Choose Us?</p>
-          <ul className="list-disc ml-4">
+          <p className="font-semibold">Why Choose Us?</p>
+          <ul className="list-disc pl-5 space-y-1">
             <li>
               <b>Expertise You Can Trust - </b>
-              <span>
-                Transparent, reliable, and backed by deep industry knowledge.
-              </span>
+              Transparent, reliable, and backed by deep industry knowledge.
             </li>
             <li>
               <b>Client-First Approach - </b>
-              <span>
-                Personalized services for retail and institutional clients
-                alike.
-              </span>
+              Personalized services for retail and institutional clients alike.
             </li>
             <li>
               <b>Innovative Marketing - </b>
-              <span>Modern strategies to maximize property value.</span>
+              Modern strategies to maximize property value.
             </li>
             <li>
               <b>All-in-One Solutions - </b>
-              <span>From consultation to closing, we handle it all.</span>
+              From consultation to closing, we handle it all.
             </li>
           </ul>
-          <p>
-            <i>Let&apos;s build your vision, together. Contact us today.</i>
+          <p className="italic text-center sm:text-left">
+            Let's build your vision, together. Contact us today.
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center gap-8 mt-8 mx-10 text-xs ">
-          <div className="w-fit h-fit bg-[#2C7096] rounded-lg px-4 py-4 text-white">
-            <p>
-              <b>OUR VISION</b>
-            </p>
-            <p className="text-thin">
+
+        {/* Vision and Mission Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {/* Vision */}
+          <div className="bg-[#2C7096] text-white rounded-lg p-6 shadow-md">
+            <h3 className="font-bold mb-2 text-sm sm:text-base">OUR VISION</h3>
+            <p className="text-xs sm:text-sm font-light">
               We aspire to be an innovative and reliable organisation, providing
-              one step solution in real estate services
+              one step solution in real estate services.
             </p>
           </div>
-          <div className="w-fit h-fit bg-[#A4CD39] rounded-lg px-4 py-4 text-white">
-            <p>
-              <b>OUR MISSION</b>
-            </p>
-            <p className="text-thin">
+
+          {/* Mission */}
+          <div className="bg-[#A4CD39] text-white rounded-lg p-6 shadow-md">
+            <h3 className="font-bold mb-2 text-sm sm:text-base">OUR MISSION</h3>
+            <p className="text-xs sm:text-sm font-light">
               To attain 100% customer satisfaction by providing excellent
               services beyond expectation in real estate selling, buying and
               leasing.
@@ -81,4 +88,5 @@ const AboutPage = () => {
     </div>
   );
 };
+
 export default AboutPage;

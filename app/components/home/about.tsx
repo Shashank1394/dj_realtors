@@ -12,41 +12,31 @@ const ProfileCard = ({
   image: string;
   description: string;
 }) => (
-  <div className="m-8 flex flex-col justify-center items-center text-center">
+  <div className="flex flex-col justify-center items-center text-center px-4 py-8 sm:px-8 md:px-20">
     {/* Image */}
-    <div
-      style={{
-        width: "143px",
-        height: "157px",
-        overflow: "hidden",
-        position: "relative",
-      }}
-    >
+    <div className="relative w-[143px] h-[157px] sm:w-[180px] sm:h-[200px] md:w-[200px] md:h-[220px]">
       <Image
         src={image}
         alt={name}
         fill
-        style={{
-          objectFit: "cover",
-          objectPosition: "top center",
-        }}
+        className="rounded object-cover object-top"
       />
     </div>
 
     {/* Name and Title */}
-    <h2 className="font-bold mt-4 leading-none text-[#1d3557] text-base">
+    <h2 className="font-bold mt-4 text-[#1d3557] text-base sm:text-lg md:text-xl">
       {name.toUpperCase()}
     </h2>
-    <h3 className="text-xs font-light leading-none text-gray-600">{title}</h3>
+    <h3 className="text-xs sm:text-sm font-light text-gray-600">{title}</h3>
 
     {/* Description */}
-    <p className="text-sm text-center mt-3 px-4 font-light text-gray-700 max-w-3xl">
+    <p className="text-sm sm:text-base mt-3 max-w-3xl text-gray-700 font-light leading-relaxed">
       {description}
     </p>
   </div>
 );
 
-// Data for each team member
+// Team data
 const team = [
   {
     name: "DJ Dhamne",
@@ -77,9 +67,9 @@ const team = [
 // Main About Component
 const About = () => {
   return (
-    <div className="h-fit">
+    <div className="h-fit bg-white">
       {/* Section Header */}
-      <div className="flex items-center justify-center mt-8 mx-20">
+      <div className="flex items-center justify-center mt-10 mx-4 sm:mx-10 md:mx-20">
         <div className="flex-grow border-t border-black"></div>
         <span className="px-2 text-sm text-[#1d3557] tracking-wide">
           ABOUT US
@@ -93,7 +83,7 @@ const About = () => {
           <ProfileCard {...member} />
           {/* Divider */}
           {index < team.length - 1 && (
-            <div className="flex-grow border-t border-black mx-8"></div>
+            <div className="border-t border-black mx-4 sm:mx-10 md:mx-20"></div>
           )}
         </div>
       ))}

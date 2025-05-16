@@ -2,10 +2,11 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#012A4A] text-white pt-10 px-6 pb-4 md:px-20 text-sm">
-      <div className="flex flex-col sm:flex-row justify-between items-baseline md:items-center gap-10 mb-6">
-        {/* Logo and CIRIL section */}
-        <div className="flex gap-6 justify-center items-center sm:flex-col">
+    <footer className="bg-[#012A4A] text-white pt-10 px-4 sm:px-8 md:px-20 pb-4 text-sm">
+      {/* Top Section */}
+      <div className="flex flex-col lg:flex-row justify-between gap-10 mb-8">
+        {/* Logos Section */}
+        <div className="flex items-center sm:items-start gap-6 lg:w-1/3 lg:flex-col">
           {/* DJ Realtors Logo */}
           <div className="w-36 h-auto">
             <Image
@@ -29,25 +30,24 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Address Section */}
-        <div className="flex flex-col md:flex-row justify-between md:justify-end w-full md:w-2/3 gap-10">
-          <div className="text-white max-w-sm">
-            <h3 className="text-base font-semibold mb-2 leading-0">Address</h3>
-            <p>
-              4, Ashirwad Apartment, Sharanpur road,
+        {/* Address and Contact Info */}
+        <div className="flex flex-col sm:flex-row justify-between gap-8 lg:gap-16 w-full lg:w-2/3">
+          {/* Address Section */}
+          <div className="max-w-sm">
+            <h3 className="text-base font-semibold mb-2">Address</h3>
+            <p className="leading-relaxed">
+              4, Ashirwad Apartment, Sharanpur Road,
               <br />
-              Canada corner, Nashik (M.S) India
+              Canada Corner, Nashik (M.S) India
               <br />
               Pincode - 422002
             </p>
           </div>
 
           {/* Contact Info */}
-          <div className="text-white">
-            <h3 className="text-base font-semibold mb-2 leading-0">
-              Contact Info
-            </h3>
-            <ul className="space-y-1">
+          <div>
+            <h3 className="text-base font-semibold mb-2">Contact Info</h3>
+            <ul className="space-y-1 leading-relaxed">
               <li>
                 DJ Dhamne:{" "}
                 <a href="tel:+919423930253" className="hover:underline">
@@ -78,9 +78,10 @@ export default function Footer() {
       </div>
 
       {/* Bottom Strip */}
-      <div className="border-t border-gray-400 pt-4 text-center text-[13px]">
+      <div className="border-t border-gray-400 pt-4 text-center text-xs sm:text-sm">
         ©2025 - All rights reserved by DJ Realtors | Website Designed and
-        Developed by <span className="font-bold">Shapes Art & Design</span>
+        Developed by{" "}
+        <span className="font-semibold text-white">Shapes Art & Design</span>
       </div>
     </footer>
   );

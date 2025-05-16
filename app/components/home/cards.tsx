@@ -7,21 +7,28 @@ interface CardProps {
   description: string;
 }
 
-// Reusable Card component
+// Individual Card Component
 const Card = ({ imageSrc, altText, title, description }: CardProps) => {
   return (
-    <div className="bg-[#BFE0FF] min-h-[260px] max-w-[300px] p-6 rounded-md md:min-w-[300px] md:min-h-[270px] lg:min-w-[450px] lg:min-h-[300px]">
+    <div className="bg-[#BFE0FF] min-h-[260px] w-full p-6 rounded-md shadow-md transition-transform hover:scale-[1.02] duration-300">
+      {/* Icon and Title */}
       <div className="flex items-center gap-2 mb-3">
         <Image src={imageSrc} alt={altText} width={40} height={40} />
-        <h2 className="font-bold md:pt-4 pt-2">{title}</h2>
+        <h2 className="font-bold text-2xl sm:text-base md:text-lg lg:text-xl pt-1">
+          {title}
+        </h2>
       </div>
-      <p>{description}</p>
+
+      {/* Description */}
+      <p className="text-xl sm:text-sm md:text-base text-gray-700 leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 };
 
+// Card Group Component
 const Cards = () => {
-  // Card data array
   const cardData = [
     {
       imageSrc: "/dj_realtors/verticals/corporate.png",
@@ -33,7 +40,7 @@ const Cards = () => {
     {
       imageSrc: "/dj_realtors/verticals/logistics.png",
       altText: "Logistics and Warehouse",
-      title: "LOGISTICS & WEARHOUSE",
+      title: "LOGISTICS & WAREHOUSE",
       description:
         "Explore top industrial spaces including warehouses, plants, and more built for efficiency, growth, and prime connectivity.",
     },
@@ -56,19 +63,19 @@ const Cards = () => {
       altText: "Investment Preleased",
       title: "INVESTMENT PRELEASED",
       description:
-        "Secure pre-released investment properties in prime locations with strong growth and future value potential.",
+        "Secure pre-leased investment properties in prime locations with strong growth and future value potential.",
     },
     {
       imageSrc: "/dj_realtors/verticals/residential.png",
       altText: "Premium Residential",
       title: "PREMIUM RESIDENTIAL",
       description:
-        "Secure pre-released investment properties in prime locations with strong growth and future value potential.",
+        "Experience luxury living in thoughtfully designed spaces located in premier residential zones with modern infrastructure.",
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-4 py-8 text-lg lg:text-2xl justify-center items-center md:mx-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-14 py-8">
       {cardData.map(({ imageSrc, altText, title, description }) => (
         <Card
           key={title}

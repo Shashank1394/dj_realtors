@@ -13,21 +13,24 @@ const clientLogos = [
 
 const Clients = () => {
   return (
-    <div className="h-fit ">
-      <div className="flex items-center justify-center mt-8 mx-20">
+    <div className="h-fit w-full bg-white py-10">
+      {/* Section Header */}
+      <div className="flex items-center justify-center mb-8 mx-4 sm:mx-10 md:mx-20">
         <div className="flex-grow border-t border-black"></div>
-        <span className="px-2 text-sm text-[#1d3557] tracking-wide">
+        <span className="px-2 text-sm sm:text-base text-[#1d3557] tracking-wide">
           OUR MILESTONE CLIENTS
         </span>
         <div className="flex-grow border-t border-black"></div>
       </div>
-      <div className="grid grid-cols-2 mt-8">
+
+      {/* Logos Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 px-6 sm:px-10 lg:px-20">
         {clientLogos.map((logo, index) => (
           <div
             key={index}
-            className="w-full h-[120px] flex items-center justify-center"
+            className="flex items-center justify-center h-[100px]"
           >
-            <div className="relative w-[120px] h-[100px]">
+            <div className="relative w-[100px] h-[80px] sm:w-[120px] sm:h-[100px]">
               <Image
                 src={`/dj_realtors/clients/${logo}`}
                 alt={logo.split(".")[0]}
@@ -41,4 +44,5 @@ const Clients = () => {
     </div>
   );
 };
+
 export default Clients;

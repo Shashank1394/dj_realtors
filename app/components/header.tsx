@@ -42,7 +42,7 @@ const Header = () => {
             <Link href="/about" className="hover:text-gray-300">
               About Us
             </Link>
-            <Link href="/catergories" className="hover:text-gray-300">
+            <Link href="/categories" className="hover:text-gray-300">
               Categories
             </Link>
             <Link href="/testimony" className="hover:text-gray-300">

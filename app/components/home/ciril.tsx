@@ -2,11 +2,12 @@ import Link from "next/link";
 
 const Ciril = () => {
   return (
-    <div className="h-fit bg-[#DEE7FF] mt-8 py-8">
-      <div className="flex items-center justify-center mx-20 pb-8">
+    <div className="h-fit bg-[#DEE7FF] mt-8 py-10 px-4 sm:px-8 md:px-20">
+      {/* Section Header */}
+      <div className="flex items-center justify-center mb-8">
         <div className="flex-grow border-t border-black"></div>
         <span
-          className="px-2 text-sm text-[#1d3557] tracking-wide"
+          className="px-3 text-sm sm:text-base text-[#1d3557] tracking-wide"
           id="verticals"
         >
           CIRIL
@@ -14,12 +15,13 @@ const Ciril = () => {
         <div className="flex-grow border-t border-black"></div>
       </div>
 
-      <div className="mx-6">
-        <p className="text-sm text-center">
-          Our <b>Expertise</b> Will Help You
+      {/* Content */}
+      <div className="max-w-4xl mx-auto text-center">
+        <p className="text-sm sm:text-base mb-2">
+          Our <strong>Expertise</strong> Will Help You
         </p>
-        <br />
-        <p className="text-center text-sm">
+
+        <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
           CIRIL is India&apos;s leading commercial real estate advisory services
           founded by top real estate consultants having over 2 decades of
           experience in their respective cities, offering expert services in
@@ -29,17 +31,21 @@ const Ciril = () => {
           delivery. Structured vertically with dedicated teams, CIRIL is
           committed to excellence and expanding our footprint across India.
         </p>
-        <br />
-        <div className="flex justify-center">
+
+        {/* Link Button */}
+        <div className="mt-6">
           <Link
-            href={"https://www.ciril.in/"}
-            className="bg-[#012A4A] text-white py-1 px-2 text-xs rounded-sm"
+            href="https://www.ciril.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#012A4A] text-white py-2 px-4 text-xs sm:text-sm md:text-base rounded-sm hover:bg-[#021d33] transition-colors duration-300"
           >
-            Ciril Website
+            Visit CIRIL Website
           </Link>
         </div>
       </div>
     </div>
   );
 };
+
 export default Ciril;
