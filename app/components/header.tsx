@@ -42,7 +42,7 @@ const Header = () => {
             <Link href="/about" className="hover:text-gray-300">
               About Us
             </Link>
-            <Link href="/category" className="hover:text-gray-300">
+            <Link href="/catergories" className="hover:text-gray-300">
               Categories
             </Link>
             <Link href="/testimony" className="hover:text-gray-300">
@@ -71,7 +71,7 @@ const Header = () => {
             About Us
           </Link>
           <Link
-            href="/category"
+            href="/categories"
             onClick={closeMenu}
             className="hover:underline"
           >
