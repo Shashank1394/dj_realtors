@@ -11,17 +11,17 @@ const clientLogos = [
   "kfc.png",
 ];
 
-const Clients = () => {
+const CompaniesPage = () => {
   return (
     <div className="h-fit ">
-      <div className="flex items-center justify-center mt-8 mx-20">
+      <div className="flex items-center justify-center mt-8 mx-10">
         <div className="flex-grow border-t border-black"></div>
         <span className="px-2 text-sm text-[#1d3557] tracking-wide">
-          OUR MILESTONE CLIENTS
+          COMPANIES WE HAVE CREATED
         </span>
         <div className="flex-grow border-t border-black"></div>
       </div>
-      <div className="grid grid-cols-2 mt-8">
+      <div className="grid grid-cols-2 my-8">
         {clientLogos.map((logo, index) => (
           <div
             key={index}
@@ -41,4 +41,4 @@ const Clients = () => {
     </div>
   );
 };
-export default Clients;
+export default CompaniesPage;

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Ciril = () => {
   return (
     <div className="h-fit bg-[#DEE7FF] mt-8 py-8">
@@ -29,9 +31,12 @@ const Ciril = () => {
         </p>
         <br />
         <div className="flex justify-center">
-          <button className="bg-[#012A4A] text-white py-1 px-2 text-xs">
+          <Link
+            href={"https://www.ciril.in/"}
+            className="bg-[#012A4A] text-white py-1 px-2 text-xs rounded-sm"
+          >
             Ciril Website
-          </button>
+          </Link>
         </div>
       </div>
     </div>
