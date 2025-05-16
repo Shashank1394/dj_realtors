@@ -25,8 +25,8 @@ const AboutPage = () => {
           <p>
             At DJ Realtors, we offer end-to-end real estate solutions across
             residential, commercial, industrial, and agricultural segments.
-            Whether you're buying, investing, or developing, we provide expert
-            guidance and tailored strategies to help you succeed.
+            Whether you&apos;re buying, investing, or developing, we provide
+            expert guidance and tailored strategies to help you succeed.
           </p>
           <p>Why Choose Us?</p>
           <ul className="list-disc ml-4">
