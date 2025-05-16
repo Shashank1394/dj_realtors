@@ -59,7 +59,7 @@ const AboutPage = () => {
             </li>
           </ul>
           <p className="italic text-center sm:text-left">
-            Let's build your vision, together. Contact us today.
+            Let&apos;s build your vision, together. Contact us today.
           </p>
         </div>
 
