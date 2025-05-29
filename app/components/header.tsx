@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +14,13 @@ const Header = () => {
 
   return (
     <>
-      {/* Main Header */}
-      <header className="bg-[#012A4A] px-5 py-4 text-white z-50 w-full">
+      {/* Animated Header */}
+      <motion.header
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="bg-[#012A4A] px-5 py-4 text-white z-50 w-full"
+      >
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 text-xl">
@@ -48,11 +54,16 @@ const Header = () => {
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
-      </header>
+      </motion.header>
 
-      {/* Full Screen Mobile Menu */}
+      {/* Fullscreen Mobile Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[999] bg-[#F0F0F0] flex flex-col items-center justify-center space-y-8 text-2xl font-medium text-black">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          className="fixed inset-0 z-[999] bg-[#F0F0F0] flex flex-col items-center justify-center space-y-8 text-2xl font-medium text-black"
+        >
           <Link href="/" onClick={closeMenu} className="hover:underline">
             Home
           </Link>
@@ -72,26 +83,10 @@ const Header = () => {
           >
             Close
           </button>
-        </div>
+        </motion.div>
       )}
     </>
   );
 };
 
 export default Header;
-
-// <svg
-//   width="100%"
-//   height="100%"
-//   viewBox="0 0 131 90"
-//   fill="none"
-//   xmlns="http://www.w3.org/2000/svg"
-// >
-//   <circle cx="45" cy="41" r="40.5" fill="black" stroke="black" />
-//   <path
-//     d="M86 82C91.3842 82 96.7157 80.9395 101.69 78.879C106.664 76.8186 111.184 73.7986 114.991 69.9914C118.799 66.1842 121.819 61.6644 123.879 56.69C125.939 51.7157 127 46.3842 127 41C127 35.6158 125.939 30.2843 123.879 25.31C121.819 20.3356 118.799 15.8158 114.991 12.0086C111.184 8.20142 106.664 5.18138 101.69 3.12094C96.7157 1.0605 91.3842 0 86 0V82Z"
-//     fill="black"
-//     stroke="black"
-//     strokeWidth="2"
-//   />
-// </svg>

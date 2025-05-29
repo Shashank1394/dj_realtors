@@ -6,13 +6,13 @@ import Verticals from "./components/home/verticals";
 
 const Home = () => {
   return (
-    <>
+    <main>
       <HomePage />
       <Verticals />
       <About />
       <Clients />
       <Ciril />
-    </>
+    </main>
   );
 };
 

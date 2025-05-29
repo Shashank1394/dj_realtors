@@ -1,18 +1,27 @@
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
-// Reusable ProfileCard component
+// Reusable ProfileCard component with animation
 const ProfileCard = ({
   name,
   title,
   image,
   description,
+  delay = 0,
 }: {
   name: string;
   title: string;
   image: string;
   description: string;
+  delay?: number;
 }) => (
-  <div className="flex flex-col justify-center items-center text-center px-4 py-8 sm:px-8 md:px-20">
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay }}
+    viewport={{ once: true }}
+    className="flex flex-col justify-center items-center text-center px-4 sm:px-8 py-8 md:py-12 max-w-5xl mx-auto"
+  >
     {/* Image */}
     <div className="relative w-[143px] h-[157px] sm:w-[180px] sm:h-[200px] md:w-[200px] md:h-[220px]">
       <Image
@@ -30,10 +39,10 @@ const ProfileCard = ({
     <h3 className="text-xs sm:text-sm font-light text-gray-600">{title}</h3>
 
     {/* Description */}
-    <p className="text-sm sm:text-base mt-3 max-w-3xl text-gray-700 font-light leading-relaxed">
+    <p className="text-sm sm:text-base mt-3 px-2 text-gray-700 font-light leading-relaxed">
       {description}
     </p>
-  </div>
+  </motion.div>
 );
 
 // Team data
@@ -69,21 +78,32 @@ const About = () => {
   return (
     <div className="h-fit bg-white mx-4">
       {/* Section Header */}
-      <div className="flex items-center justify-center mt-10 mx-4 sm:mx-10 md:mx-20">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="flex items-center justify-center mt-10 mx-4 sm:mx-10 md:mx-20"
+      >
         <div className="flex-grow border-t border-black"></div>
-        <span className="px-2 text-sm text-[#1d3557] tracking-wide">
+        <span className="px-2 text-sm sm:text-base text-[#1d3557] tracking-wide">
           ABOUT US
         </span>
         <div className="flex-grow border-t border-black"></div>
-      </div>
+      </motion.div>
 
       {/* Team Section */}
       {team.map((member, index) => (
         <div key={index}>
-          <ProfileCard {...member} />
-          {/* Divider */}
+          <ProfileCard {...member} delay={index * 0.2} />
           {index < team.length - 1 && (
-            <div className="border-t border-black mx-4 sm:mx-10 md:mx-20"></div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="border-t border-black mx-4 sm:mx-10 md:mx-20"
+            />
           )}
         </div>
       ))}

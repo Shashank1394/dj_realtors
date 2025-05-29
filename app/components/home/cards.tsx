@@ -1,4 +1,5 @@
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 interface CardProps {
   imageSrc: string;
@@ -7,10 +8,16 @@ interface CardProps {
   description: string;
 }
 
-// Individual Card Component
+// Individual Card Component with Animation
 const Card = ({ imageSrc, altText, title, description }: CardProps) => {
   return (
-    <div className="bg-[#BFE0FF] min-h-[260px] w-full p-6 rounded-md shadow-md transition-transform hover:scale-[1.02] duration-300">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="bg-[#BFE0FF] min-h-[260px] w-full p-6 rounded-md shadow-md transition-transform hover:scale-[1.02] duration-300"
+    >
       {/* Icon and Title */}
       <div className="flex items-center gap-2 mb-3">
         <Image src={imageSrc} alt={altText} width={40} height={40} />
@@ -23,7 +30,7 @@ const Card = ({ imageSrc, altText, title, description }: CardProps) => {
       <p className="text-xl sm:text-sm md:text-base text-gray-700 leading-relaxed">
         {description}
       </p>
-    </div>
+    </motion.div>
   );
 };
 

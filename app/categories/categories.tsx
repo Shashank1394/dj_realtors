@@ -1,4 +1,5 @@
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 interface CategoriesProps {
   title: string;
@@ -14,19 +15,32 @@ const CategoryCard = ({
   reverse,
 }: CategoriesProps) => {
   return (
-    <div
+    <motion.div
       className={`flex flex-col md:flex-row ${
         reverse ? "md:flex-row-reverse" : ""
       } items-center gap-8 py-10 px-6 md:px-20`}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       {/* Text Content */}
-      <div className="md:w-1/2 text-white">
+      <motion.div
+        initial={{ opacity: 0, x: reverse ? 100 : -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        className="md:w-1/2 text-white"
+      >
         <h2 className="text-xl font-semibold tracking-wide mb-4">{title}</h2>
         <p className="text-base leading-relaxed">{description}</p>
-      </div>
+      </motion.div>
 
       {/* Image */}
-      <div className="md:w-1/2 w-full">
+      <motion.div
+        initial={{ opacity: 0, x: reverse ? -100 : 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="md:w-1/2 w-full"
+      >
         <Image
           src={imageSrc}
           alt={title}
@@ -34,8 +48,8 @@ const CategoryCard = ({
           height={600}
           className="rounded-md w-full h-auto object-cover"
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
@@ -94,13 +108,18 @@ const CategoriesPage = () => {
   return (
     <div className="bg-[#063356]">
       {/* Section Title */}
-      <div className="flex items-center justify-center pt-8 px-10">
+      <motion.div
+        className="flex items-center justify-center pt-8 px-10"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="flex-grow border-t border-white"></div>
         <span className="px-4 text-sm text-white tracking-wide" id="verticals">
           CATEGORIES WE CATER
         </span>
         <div className="flex-grow border-t border-white"></div>
-      </div>
+      </motion.div>
 
       {/* Category Cards */}
       {categoriesData.map((category, index) => (
@@ -111,7 +130,6 @@ const CategoriesPage = () => {
             imageSrc={category.imageSrc}
             reverse={index % 2 !== 0}
           />
-          {/* Render the border only if it's not the last item */}
           {index !== categoriesData.length - 1 && (
             <div className="border-t border-white mx-6 md:mx-20"></div>
           )}

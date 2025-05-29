@@ -1,4 +1,5 @@
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 const TeamPage = () => {
   const teamMembers = [
@@ -34,8 +35,14 @@ const TeamPage = () => {
 
   return (
     <div className="h-fit">
-      {/* Header */}
-      <div className="flex items-center justify-center my-8 mx-20">
+      {/* Section Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="flex items-center justify-center my-8 mx-20"
+      >
         <div className="flex-grow border-t border-black"></div>
         <span
           className="px-2 text-sm text-[#1d3557] tracking-wide"
@@ -44,24 +51,35 @@ const TeamPage = () => {
           OUR TEAM
         </span>
         <div className="flex-grow border-t border-black"></div>
-      </div>
+      </motion.div>
 
       {/* Team Members */}
-      <div className="flex flex-wrap justify-center gap-12 px-4 pb-12">
+      <motion.div
+        className="flex flex-wrap justify-center gap-10 sm:gap-12 md:gap-20 px-4 pb-12"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.15,
+            },
+          },
+        }}
+      >
         {teamMembers.map((member, index) => (
-          <div
+          <motion.div
             key={index}
-            className="flex flex-col items-center text-center max-w-[180px]"
+            variants={{
+              hidden: { opacity: 0, scale: 0.95 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="flex flex-col items-center text-center w-full max-w-[180px] sm:max-w-[200px] md:max-w-[220px] lg:max-w-[250px]"
           >
             {/* Image Container */}
-            <div
-              style={{
-                width: "143px",
-                height: "157px",
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
+            <div className="w-[90%] sm:w-[180px] md:w-[200px] lg:w-[220px] aspect-[5/5.3] relative overflow-hidden rounded-md shadow-md">
               <Image
                 src={member.image}
                 alt={member.name}
@@ -75,14 +93,14 @@ const TeamPage = () => {
 
             {/* Text Content */}
             <div className="mt-4">
-              <h2 className="text-lg font-semibold text-[#1d3557] leading-tight">
+              <h2 className="text-base sm:text-lg font-semibold text-[#1d3557] leading-tight">
                 {member.name}
               </h2>
               <p className="text-sm text-gray-700 mt-1 whitespace-pre-line">
                 {member.title}
                 {"\n"}
                 {member.department}
-                <br></br>
+                <br />
                 <a
                   href={`tel:${member.phone}`}
                   className="hover:underline block mt-1"
@@ -93,9 +111,9 @@ const TeamPage = () => {
                 </a>
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

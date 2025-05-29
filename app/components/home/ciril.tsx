@@ -1,10 +1,23 @@
 import Link from "next/link";
+import * as motion from "motion/react-client";
 
 const Ciril = () => {
   return (
-    <div className="h-fit bg-[#DEE7FF] mt-8 py-10 px-4 sm:px-8 md:px-20">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="h-fit bg-[#DEE7FF] mt-8 py-10 px-4 sm:px-8 md:px-20"
+    >
       {/* Section Header */}
-      <div className="flex items-center justify-center mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="flex items-center justify-center mb-8"
+      >
         <div className="flex-grow border-t border-black"></div>
         <span
           className="px-3 text-sm sm:text-base text-[#1d3557] tracking-wide"
@@ -13,10 +26,16 @@ const Ciril = () => {
           CIRIL
         </span>
         <div className="flex-grow border-t border-black"></div>
-      </div>
+      </motion.div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="max-w-4xl mx-auto text-center"
+      >
         <p className="text-sm sm:text-base mb-2">
           Our <strong>Expertise</strong> Will Help You
         </p>
@@ -33,7 +52,13 @@ const Ciril = () => {
         </p>
 
         {/* Link Button */}
-        <div className="mt-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-6"
+        >
           <Link
             href="https://www.ciril.in/"
             target="_blank"
@@ -42,9 +67,9 @@ const Ciril = () => {
           >
             Visit CIRIL Website
           </Link>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

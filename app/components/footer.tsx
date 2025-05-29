@@ -1,13 +1,19 @@
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#012A4A] text-white pt-10 px-4 sm:px-8 md:px-20 pb-4 text-sm">
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="bg-[#012A4A] text-white pt-10 px-4 sm:px-8 md:px-20 pb-4 text-sm"
+    >
       {/* Top Section */}
       <div className="flex flex-col lg:flex-row justify-between gap-10 mb-8">
         {/* Logos Section */}
         <div className="flex items-center sm:items-start gap-6 lg:w-1/3 lg:flex-col">
-          {/* DJ Realtors Logo */}
           <div className="w-36 h-auto">
             <Image
               src="/footer/dj_logo.jpg"
@@ -17,8 +23,6 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
-
-          {/* CIRIL Logo */}
           <div className="w-24 h-auto">
             <Image
               src="/footer/ciril_logo.png"
@@ -32,7 +36,7 @@ export default function Footer() {
 
         {/* Address and Contact Info */}
         <div className="flex flex-col sm:flex-row justify-between gap-8 lg:gap-16 w-full lg:w-2/3">
-          {/* Address Section */}
+          {/* Address */}
           <div className="max-w-sm">
             <h3 className="text-lg font-semibold mb-2">Address</h3>
             <p className="text-base leading-relaxed">
@@ -44,7 +48,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-2">Contact Info</h3>
             <ul className="space-y-1 leading-relaxed text-base">
@@ -83,6 +87,6 @@ export default function Footer() {
         Developed by{" "}
         <span className="font-semibold text-white">Shapes Art & Design</span>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
