@@ -24,12 +24,15 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 text-xl">
-            <span className="relative w-10 h-10">
+            <span className="relative w-10 h-10 shrink-0">
               <Image
                 src="/dj.png"
                 alt="DJ Realtors logo"
                 fill
                 className="object-contain"
+                quality={40}
+                priority
+                sizes="40px"
               />
             </span>
             <span className="tracking-wide">DJ REALTORS</span>

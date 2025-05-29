@@ -5,20 +5,17 @@ const HomePage = () => {
   return (
     <section className="relative w-full h-[calc(100vh-60px)] overflow-hidden">
       {/* Background Image with Scale and Fade-In */}
-      <motion.div
-        initial={{ opacity: 0, scale: 1.05 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        className="absolute inset-0 z-0"
-      >
+      <div className="absolute inset-0 z-0">
         <Image
-          src="/homeImage.jpg"
+          src="/homeImage.webp"
           alt="Hero Image"
           fill
           className="object-cover object-center"
           priority
+          quality={35}
+          sizes="100vw"
         />
-      </motion.div>
+      </div>
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70 z-10" />
