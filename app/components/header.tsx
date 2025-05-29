@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,22 +18,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 text-xl">
-            <span className="w-[44px] h-[29px]" aria-hidden="true">
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="0 0 131 90"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="45" cy="41" r="40.5" fill="black" stroke="black" />
-                <path
-                  d="M86 82C91.3842 82 96.7157 80.9395 101.69 78.879C106.664 76.8186 111.184 73.7986 114.991 69.9914C118.799 66.1842 121.819 61.6644 123.879 56.69C125.939 51.7157 127 46.3842 127 41C127 35.6158 125.939 30.2843 123.879 25.31C121.819 20.3356 118.799 15.8158 114.991 12.0086C111.184 8.20142 106.664 5.18138 101.69 3.12094C96.7157 1.0605 91.3842 0 86 0V82Z"
-                  fill="black"
-                  stroke="black"
-                  strokeWidth="2"
-                />
-              </svg>
+            <span className="relative w-10 h-10">
+              <Image
+                src="/dj.png"
+                alt="DJ Realtors logo"
+                fill
+                className="object-contain"
+              />
             </span>
             <span className="tracking-wide">DJ REALTORS</span>
           </Link>
@@ -87,3 +79,19 @@ const Header = () => {
 };
 
 export default Header;
+
+// <svg
+//   width="100%"
+//   height="100%"
+//   viewBox="0 0 131 90"
+//   fill="none"
+//   xmlns="http://www.w3.org/2000/svg"
+// >
+//   <circle cx="45" cy="41" r="40.5" fill="black" stroke="black" />
+//   <path
+//     d="M86 82C91.3842 82 96.7157 80.9395 101.69 78.879C106.664 76.8186 111.184 73.7986 114.991 69.9914C118.799 66.1842 121.819 61.6644 123.879 56.69C125.939 51.7157 127 46.3842 127 41C127 35.6158 125.939 30.2843 123.879 25.31C121.819 20.3356 118.799 15.8158 114.991 12.0086C111.184 8.20142 106.664 5.18138 101.69 3.12094C96.7157 1.0605 91.3842 0 86 0V82Z"
+//     fill="black"
+//     stroke="black"
+//     strokeWidth="2"
+//   />
+// </svg>

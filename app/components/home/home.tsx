@@ -17,7 +17,7 @@ const HomePage = () => {
 
       {/* Hero Text */}
       <div className="absolute inset-0 z-30 flex flex-col justify-center items-center text-center px-4">
-        <h1 className="text-white text-3xl md:text-4xl font-light leading-tight drop-shadow-lg font-times">
+        <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-light leading-tight drop-shadow-[0_6px_8px_rgba(0,0,0,0.75)] font-times">
           <span>Beyond Real Estate,</span>
           <br />
           <span className="font-pinyon">A Legacy</span>
