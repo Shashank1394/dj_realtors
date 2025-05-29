@@ -29,7 +29,7 @@ const CompaniesPage = () => {
           >
             <div className="relative w-[120px] h-[100px]">
               <Image
-                src={`/dj_realtors/clients/${logo}`}
+                src={`/clients/${logo}`}
                 alt={logo.split(".")[0]}
                 fill
                 className="object-contain"

@@ -32,7 +32,7 @@ const Clients = () => {
           >
             <div className="relative w-[100px] h-[80px] sm:w-[120px] sm:h-[100px]">
               <Image
-                src={`/dj_realtors/clients/${logo}`}
+                src={`/clients/${logo}`}
                 alt={logo.split(".")[0]}
                 fill
                 className="object-contain"

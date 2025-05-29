@@ -41,25 +41,25 @@ const team = [
   {
     name: "DJ Dhamne",
     title: "Chairman - DJ Realtors",
-    image: "/dj_realtors/about/dj_dhamne.png",
+    image: "/about/dj_dhamne.png",
     description: `Veteran Entrepreneur & Real Estate Visionary. With over four decades of experience, DJ Dhamne is the founder of DJ Realtors, specializing in real estate development and consultancy. Starting his career in 1976, he completed 35 projects and developed key Nashik neighborhoods. After a successful pharma venture, he returned to real estate in 2007, focusing on residential developments and land consultancy across Nashik. An industry leader, Mr. Dhamne has completed specialized training in land development and digital marketing, and has held key roles, including President of the Association of Real Estate Consultants, Nashik. His ethical, customer-first approach continues to shape DJ Realtors as a trusted real estate firm.`,
   },
   {
     name: "Shrirang Bhadane",
     title: "Managing Director - CRE | Retail",
-    image: "/dj_realtors/about/shrirang_bhadane.png",
+    image: "/about/shrirang_bhadane.png",
     description: `Client-First Approach | 10+ Years in Real Estate Advisory. Shrirang Bhadane brings over a decade of real estate experience marked by persistence, integrity, and a people-first mindset. With deep roots in the Nashik community and a strong network within the local market, he offers clients hands-on, results-driven guidance through every step of their real estate journey. Known for his clear communication, expert negotiation skills, and commitment to service, Shrirang has built his business almost entirely through referrals.`,
   },
   {
     name: "Prashant Nahar",
     title: "Director - Retail Vertical",
-    image: "/dj_realtors/about/prashant_nahar.png",
+    image: "/about/prashant_nahar.png",
     description: `Expert in Retail Real Estate Development & Leasing | 15+ Years of Experience. Prashant Nahar leads DJ Realtors LLP's retail vertical with over 15 years of core expertise in retail property development, leasing, and strategic advisory. Known for connecting top brands with premium, high-visibility retail spaces, he brings deep market knowledge and a results-driven, client-first approach.`,
   },
   {
     name: "Harshad Kotkar",
     title: "Director - Land Vertical",
-    image: "/dj_realtors/about/harshad_kotkar.png",
+    image: "/about/harshad_kotkar.png",
     description: `Expert in Land, Farm Plots & Bungalow Plot Transactions. Harshad Kotkar leads DJ Realtors's land and plot vertical with deep expertise in farmland, bungalow plots, and building plot sales and acquisitions. With years of focused experience, he brings sharp market insight, a strong industry network, and a reputation for transparent, client-first transactions.`,
   },
 ];

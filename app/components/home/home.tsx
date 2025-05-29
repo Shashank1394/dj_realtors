@@ -5,7 +5,7 @@ const HomePage = () => {
     <section className="relative w-full h-[calc(100vh-60px)] overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/dj_realtors/homeImage.jpg"
+        src="/homeImage.jpg"
         alt="Hero Image"
         fill
         className="object-cover object-center z-0"
@@ -17,10 +17,10 @@ const HomePage = () => {
 
       {/* Hero Text */}
       <div className="absolute inset-0 z-30 flex flex-col justify-center items-center text-center px-4">
-        <h1 className="text-white text-3xl md:text-4xl font-light leading-tight drop-shadow-lg">
+        <h1 className="text-white text-3xl md:text-4xl font-light leading-tight drop-shadow-lg font-times">
           <span>Beyond Real Estate,</span>
           <br />
-          <span>A Legacy</span>
+          <span className="font-pinyon">A Legacy</span>
         </h1>
       </div>
 

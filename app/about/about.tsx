@@ -20,7 +20,7 @@ const AboutPage = () => {
         {/* Logo */}
         <div className="flex justify-center">
           <Image
-            src="/dj_realtors/footer/dj_logo.jpg"
+            src="/footer/dj_logo.jpg"
             alt="dj logo"
             width={200}
             height={200}

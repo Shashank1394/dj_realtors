@@ -10,7 +10,7 @@ export default function Footer() {
           {/* DJ Realtors Logo */}
           <div className="w-36 h-auto">
             <Image
-              src="/dj_realtors/footer/dj_logo.jpg"
+              src="/footer/dj_logo.jpg"
               alt="DJ Realtors Logo"
               width={150}
               height={60}
@@ -21,7 +21,7 @@ export default function Footer() {
           {/* CIRIL Logo */}
           <div className="w-24 h-auto">
             <Image
-              src="/dj_realtors/footer/ciril_logo.png"
+              src="/footer/ciril_logo.png"
               alt="CIRIL Logo"
               width={100}
               height={40}

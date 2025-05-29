@@ -45,9 +45,6 @@ const Header = () => {
             <Link href="/categories" className="hover:text-gray-300">
               Categories
             </Link>
-            <Link href="/testimony" className="hover:text-gray-300">
-              Testimonials
-            </Link>
           </div>
 
           {/* Mobile Hamburger */}

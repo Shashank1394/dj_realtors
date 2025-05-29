@@ -31,42 +31,42 @@ const Card = ({ imageSrc, altText, title, description }: CardProps) => {
 const Cards = () => {
   const cardData = [
     {
-      imageSrc: "/dj_realtors/verticals/corporate.png",
+      imageSrc: "/verticals/corporate.png",
       altText: "Corporate Services",
       title: "CORPORATE SERVICES",
       description:
         "Discover prime commercial spaces with top-tier infrastructure to elevate your business and brand.",
     },
     {
-      imageSrc: "/dj_realtors/verticals/logistics.png",
+      imageSrc: "/verticals/logistics.png",
       altText: "Logistics and Warehouse",
       title: "LOGISTICS & WAREHOUSE",
       description:
         "Explore top industrial spaces including warehouses, plants, and more built for efficiency, growth, and prime connectivity.",
     },
     {
-      imageSrc: "/dj_realtors/verticals/retail.png",
+      imageSrc: "/verticals/retail.png",
       altText: "Retail Services",
       title: "RETAIL SERVICES",
       description:
         "Discover premium retail spaces in high-traffic, prime locations perfect for boutiques, flagship stores, and franchises to boost brand visibility.",
     },
     {
-      imageSrc: "/dj_realtors/verticals/land.png",
+      imageSrc: "/verticals/land.png",
       altText: "Land Services",
       title: "LAND",
       description:
         "Explore prime land for commercial, residential and industrial projects with high ROI potential.",
     },
     {
-      imageSrc: "/dj_realtors/verticals/investment.png",
+      imageSrc: "/verticals/investment.png",
       altText: "Investment Preleased",
       title: "INVESTMENT PRELEASED",
       description:
         "Secure pre-leased investment properties in prime locations with strong growth and future value potential.",
     },
     {
-      imageSrc: "/dj_realtors/verticals/residential.png",
+      imageSrc: "/verticals/residential.png",
       altText: "Premium Residential",
       title: "PREMIUM RESIDENTIAL",
       description:

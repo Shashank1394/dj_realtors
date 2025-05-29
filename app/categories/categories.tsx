@@ -45,49 +45,49 @@ const CategoriesPage = () => {
       title: "COMMERCIAL SPACES",
       description:
         "Discover premium commercial spaces in prime locations. From modern offices to corporate hubs, our listings offer top-tier infrastructure and strategic positioning to support your business growth. Find the perfect space to elevate your professional presence today.",
-      imageSrc: "/dj_realtors/categories/commercial.jpg",
+      imageSrc: "/categories/commercial.jpg",
     },
     {
       title: "INDUSTRIAL SPACES",
       description:
         "Explore high-quality industrial spaces in prime locations. From warehouses to manufacturing units, our listings offer robust infrastructure and strategic positioning to support your operational needs. Find the perfect space to drive efficiency and growth for your business.",
-      imageSrc: "/dj_realtors/categories/industrial.jpg",
+      imageSrc: "/categories/industrial.jpg",
     },
     {
       title: "RETAIL SPACES",
       description:
         "Find premium retail spaces in prime locations designed to attract customers and maximize visibility. Whether you're launching a boutique, flagship store, or franchise, our listings offer high-traffic locations and strategic positioning to elevate your brand’s presence.",
-      imageSrc: "/dj_realtors/categories/retail.jpg",
+      imageSrc: "/categories/retail.jpg",
     },
     {
       title: "CO-WORKING SPACES",
       description:
         "Discover dynamic co-working spaces designed for productivity and collaboration. With flexible plans, premium amenities, and prime locations, our spaces provide the perfect environment for startups, freelancers, and businesses to thrive. Find your ideal workspace today.",
-      imageSrc: "/dj_realtors/categories/co-working.jpg",
+      imageSrc: "/categories/co-working.jpg",
     },
     {
       title: "OFFICE SPACES",
       description:
         "Explore premium office spaces in prime locations, designed for productivity and professionalism. Whether you need a private office, headquarters, or executive suite, our listings offer modern infrastructure and strategic positioning to support your business growth. Find the perfect workspace today.",
-      imageSrc: "/dj_realtors/categories/office.jpg",
+      imageSrc: "/categories/office.jpg",
     },
     {
       title: "FOOD & BEVERAGE SPACES",
       description:
         "Find premium food and beverage spaces in high-traffic locations. From restaurants to cafés and cloud kitchens, our listings offer strategic positioning and top-tier infrastructure to help your culinary business thrive. Secure the perfect space today.",
-      imageSrc: "/dj_realtors/categories/f&b.jpg",
+      imageSrc: "/categories/f&b.jpg",
     },
     {
       title: "LAND SPACES",
       description:
         "Discover prime land spaces for commercial, residential, and industrial development. With strategic locations and high investment potential, our listings provide the perfect foundation to build your vision from the ground up.",
-      imageSrc: "/dj_realtors/categories/land.jpg",
+      imageSrc: "/categories/land.jpg",
     },
     {
       title: "LOGISTICS & WAREHOUSE SPACES",
       description:
         "Find high-quality logistics and warehouse spaces designed for efficiency and scalability. With strategic locations, ample storage, and modern infrastructure, our listings support seamless supply chain operations. Secure the ideal space for your business today.",
-      imageSrc: "/dj_realtors/categories/logistics.jpg",
+      imageSrc: "/categories/logistics.jpg",
     },
   ];
 

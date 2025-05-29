@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url("/fonts/times/TimesNewRoman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pinyon Script";
+  src: url("/fonts/pinyon/PinyonScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer utilities {
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .font-times {
+    font-family: "TimesNewRoman", sans-serif;
+  }
+
+  .font-pinyon {
+    font-family: "Pinyon Script", cursive;
+  }
+}
