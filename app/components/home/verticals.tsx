@@ -2,7 +2,7 @@ import Cards from "./cards";
 
 const Verticals = () => {
   return (
-    <div className="h-fit bg-white">
+    <div className="h-fit bg-white mx-4">
       {/* Section Header */}
       <div className="flex items-center justify-center my-8 mx-4 sm:mx-10 md:mx-20">
         <div className="flex-grow border-t border-black"></div>

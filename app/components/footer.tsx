@@ -34,8 +34,8 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between gap-8 lg:gap-16 w-full lg:w-2/3">
           {/* Address Section */}
           <div className="max-w-sm">
-            <h3 className="text-base font-semibold mb-2">Address</h3>
-            <p className="leading-relaxed">
+            <h3 className="text-lg font-semibold mb-2">Address</h3>
+            <p className="text-base leading-relaxed">
               4, Ashirwad Apartment, Sharanpur Road,
               <br />
               Canada Corner, Nashik (M.S) India
@@ -46,8 +46,8 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-base font-semibold mb-2">Contact Info</h3>
-            <ul className="space-y-1 leading-relaxed">
+            <h3 className="text-lg font-semibold mb-2">Contact Info</h3>
+            <ul className="space-y-1 leading-relaxed text-base">
               <li>
                 DJ Dhamne:{" "}
                 <a href="tel:+919423930253" className="hover:underline">
