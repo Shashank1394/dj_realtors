@@ -77,13 +77,6 @@ const Header = () => {
           >
             Categories
           </Link>
-          <Link
-            href="/testimony"
-            onClick={closeMenu}
-            className="hover:underline"
-          >
-            Testimonials
-          </Link>
           <button
             onClick={closeMenu}
             className="text-red-600 hover:underline hover:text-red-800 mt-10"

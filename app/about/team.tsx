@@ -7,24 +7,28 @@ const TeamPage = () => {
       title: "Chairman",
       department: "DJ Realtors",
       image: "/dj_realtors/about/dj_dhamne.png",
+      phone: "+919423930253",
     },
     {
       name: "Shrirang Bhadane",
       title: "Managing Director",
       department: "CRE | Retail",
       image: "/dj_realtors/about/shrirang_bhadane.png",
+      phone: "+919921210123",
     },
     {
       name: "Prashant Nahar",
       title: "Director",
       department: "Retail Vertical",
       image: "/dj_realtors/about/prashant_nahar.png",
+      phone: "+919822770646",
     },
     {
       name: "Harshad Kotkar",
       title: "Director",
       department: "Land Vertical",
       image: "/dj_realtors/about/harshad_kotkar.png",
+      phone: "+917083111300",
     },
   ];
 
@@ -78,6 +82,15 @@ const TeamPage = () => {
                 {member.title}
                 {"\n"}
                 {member.department}
+                <br></br>
+                <a
+                  href={`tel:${member.phone}`}
+                  className="hover:underline block mt-1"
+                >
+                  {member.phone
+                    ? member.phone.replace(/^(\+91)(\d{10})$/, "$1 $2")
+                    : null}
+                </a>
               </p>
             </div>
           </div>
