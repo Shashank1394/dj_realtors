@@ -41,10 +41,12 @@ This project is client-specific and not licensed for public or commercial reuse.
 
 ## 🙋‍♂️ Author
 
-Shashank Jadhav
+**Shashank Jadhav**
+
 Web Developer | Next.js | React
 
 ## 📬 Contact
 
 Have a project or feedback?
+
 📧 shashankjadhav13940@gmail.com
