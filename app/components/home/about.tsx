@@ -16,10 +16,10 @@ const ProfileCard = ({
   delay?: number;
 }) => (
   <motion.div
-    initial={{ opacity: 0, y: 40 }}
+    initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, delay }}
-    viewport={{ once: true }}
+    transition={{ duration: 0.2, delay }}
+    viewport={{ once: true, amount: 0.8 }}
     className="flex flex-col justify-center items-center text-center px-4 sm:px-8 py-8 md:py-12 max-w-5xl mx-auto"
   >
     {/* Image */}
@@ -81,8 +81,8 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.2 }}
+        viewport={{ once: true, amount: 0.8 }}
         className="flex items-center justify-center mt-10 mx-4 sm:mx-10 md:mx-20"
       >
         <div className="flex-grow border-t border-black"></div>
@@ -95,13 +95,13 @@ const About = () => {
       {/* Team Section */}
       {team.map((member, index) => (
         <div key={index}>
-          <ProfileCard {...member} delay={index * 0.2} />
+          <ProfileCard {...member} delay={index * 0.1} />
           {index < team.length - 1 && (
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.2 }}
+              viewport={{ once: true, amount: 0.8 }}
               className="border-t border-black mx-4 sm:mx-10 md:mx-20"
             />
           )}
