@@ -33,7 +33,7 @@ const HomePage = () => {
               },
             },
           }}
-          className="text-white text-4xl md:text-6xl lg:text-8xl font-light leading-tight drop-shadow-[0_6px_8px_rgba(0,0,0,0.75)] font-times text-center"
+          className="text-white text-4xl md:text-6xl lg:text-6xl font-light leading-tight drop-shadow-[0_6px_8px_rgba(0,0,0,0.75)] font-times text-center"
         >
           <motion.div className="flex flex-col md:flex-row justify-center items-center">
             <motion.span
