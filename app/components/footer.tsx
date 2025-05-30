@@ -8,7 +8,7 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="bg-[#012A4A] text-white pt-10 px-4 sm:px-8 md:px-20 pb-4 text-sm"
+      className="bg-white text-black pt-10 px-4 sm:px-8 md:px-20 pb-4 text-sm"
     >
       {/* Top Section */}
       <div className="flex flex-col lg:flex-row justify-between gap-10 mb-8">
@@ -23,12 +23,12 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
-          <div className="w-24 h-auto">
+          <div className="w-34 h-auto">
             <Image
               src="/footer/ciril_logo.png"
               alt="CIRIL Logo"
-              width={100}
-              height={40}
+              width={250}
+              height={160}
               className="object-contain"
             />
           </div>
