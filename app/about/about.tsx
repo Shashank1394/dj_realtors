@@ -57,8 +57,8 @@ const AboutPage = () => {
             <p className="text-center sm:text-left" key="intro">
               At DJ Realtors, we offer end-to-end real estate solutions across
               residential, commercial, industrial, and agricultural segments.
-              Whether you're buying, investing, or developing, we provide expert
-              guidance and tailored strategies to help you succeed.
+              Whether you&apos;re buying, investing, or developing, we provide
+              expert guidance and tailored strategies to help you succeed.
             </p>,
             <p
               className="font-semibold text-[#1d3557] text-center sm:text-left"
