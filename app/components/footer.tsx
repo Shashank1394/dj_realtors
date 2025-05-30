@@ -82,7 +82,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Strip */}
-      <div className="border-t border-gray-400 pt-4 text-center text-xs sm:text-sm">
+      <div className="border-t border-slate-800 pt-4 text-center text-xs sm:text-sm">
         ©2025 - All rights reserved by DJ Realtors | Website Designed and
         Developed by{" "}
         <span className="font-semibold text-white">Shapes Art & Design</span>

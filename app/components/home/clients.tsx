@@ -47,8 +47,8 @@ const Clients = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.1 }}
+        viewport={{ once: true, amount: 0.8 }}
         className="flex items-center justify-center mb-8 mx-4 sm:mx-10 md:mx-20"
       >
         <div className="flex-grow border-t border-black"></div>
@@ -66,11 +66,10 @@ const Clients = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
-              duration: 0.2,
-              delay: index * 0.1,
+              duration: 0.1,
               ease: "easeOut",
             }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             className="flex items-center justify-center h-[100px]"
           >
             <div className="relative w-[100px] h-[80px] sm:w-[120px] sm:h-[100px]">
