@@ -68,19 +68,19 @@ const AboutPage = () => {
             </p>,
             <ul className="list-disc pl-5 space-y-2 text-left" key="list">
               <li>
-                <b>Expertise You Can Trust – </b> Transparent, reliable, and
+                <b>Expertise You Can Trust - </b> Transparent, reliable, and
                 backed by deep industry knowledge.
               </li>
               <li>
-                <b>Client-First Approach – </b> Personalized services for retail
+                <b>Client-First Approach - </b> Personalized services for retail
                 and institutional clients alike.
               </li>
               <li>
-                <b>Innovative Marketing – </b> Modern strategies to maximize
+                <b>Innovative Marketing - </b> Modern strategies to maximize
                 property value.
               </li>
               <li>
-                <b>All-in-One Solutions – </b> From consultation to closing, we
+                <b>All-in-One Solutions - </b> From consultation to closing, we
                 handle it all.
               </li>
             </ul>,
