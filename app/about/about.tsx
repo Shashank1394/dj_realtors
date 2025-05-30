@@ -56,7 +56,9 @@ const AboutPage = () => {
             </p>,
             <p className="text-center sm:text-left" key="intro">
               At DJ Realtors, we offer end-to-end real estate solutions across
-              residential, commercial, industrial, and agricultural segments...
+              residential, commercial, industrial, and agricultural segments.
+              Whether you're buying, investing, or developing, we provide expert
+              guidance and tailored strategies to help you succeed.
             </p>,
             <p
               className="font-semibold text-[#1d3557] text-center sm:text-left"
@@ -66,16 +68,20 @@ const AboutPage = () => {
             </p>,
             <ul className="list-disc pl-5 space-y-2 text-left" key="list">
               <li>
-                <b>Expertise You Can Trust – </b> Transparent, reliable...
+                <b>Expertise You Can Trust – </b> Transparent, reliable, and
+                backed by deep industry knowledge.
               </li>
               <li>
-                <b>Client-First Approach – </b> Personalized services...
+                <b>Client-First Approach – </b> Personalized services for retail
+                and institutional clients alike.
               </li>
               <li>
-                <b>Innovative Marketing – </b> Modern strategies...
+                <b>Innovative Marketing – </b> Modern strategies to maximize
+                property value.
               </li>
               <li>
-                <b>All-in-One Solutions – </b> From consultation to closing...
+                <b>All-in-One Solutions – </b> From consultation to closing, we
+                handle it all.
               </li>
             </ul>,
             <p className="italic text-center sm:text-left" key="footer">
@@ -106,7 +112,8 @@ const AboutPage = () => {
               OUR VISION
             </h3>
             <p className="text-sm sm:text-base lg:text-lg font-light">
-              We aspire to be an innovative and reliable organisation...
+              We aspire to be an innovative and reliable organisation, providing
+              one step solution in real estate services
             </p>
           </motion.div>
 
@@ -121,7 +128,9 @@ const AboutPage = () => {
               OUR MISSION
             </h3>
             <p className="text-sm sm:text-base lg:text-lg font-light">
-              To attain 100% customer satisfaction...
+              To attain 100% customer satisfaction by providing excellent
+              services beyond expectation in real estate selling, buying and
+              leasing.
             </p>
           </motion.div>
         </div>
