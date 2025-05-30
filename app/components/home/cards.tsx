@@ -21,13 +21,13 @@ const Card = ({ imageSrc, altText, title, description }: CardProps) => {
       {/* Icon and Title */}
       <div className="flex items-center gap-2 mb-3">
         <Image src={imageSrc} alt={altText} width={40} height={40} />
-        <h2 className="font-bold text-2xl sm:text-base md:text-lg lg:text-xl pt-1 font-montserrat">
+        <h2 className="font-bold text-base sm:text-lg md:text-lg lg:text-xl pt-1 font-montserrat">
           {title}
         </h2>
       </div>
 
       {/* Description */}
-      <p className="text-xl sm:text-sm md:text-base text-gray-700 leading-relaxed">
+      <p className="text-base sm:text-lg md:text-base text-gray-700 leading-relaxed">
         {description}
       </p>
     </motion.div>

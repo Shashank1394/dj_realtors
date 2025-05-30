@@ -47,7 +47,7 @@ const Clients = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.2 }}
         viewport={{ once: true }}
         className="flex items-center justify-center mb-8 mx-4 sm:mx-10 md:mx-20"
       >
@@ -66,7 +66,7 @@ const Clients = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
-              duration: 0.5,
+              duration: 0.2,
               delay: index * 0.1,
               ease: "easeOut",
             }}
