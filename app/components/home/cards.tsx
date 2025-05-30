@@ -39,8 +39,8 @@ const Cards = () => {
   const cardData = [
     {
       imageSrc: "/verticals/corporate.png",
-      altText: "Corporate Services",
-      title: "CORPORATE SERVICES",
+      altText: "Commercial Real Estate",
+      title: "COMMERCIAL REAL ESTATE",
       description:
         "Discover prime commercial spaces with top-tier infrastructure to elevate your business and brand.",
     },
@@ -49,12 +49,12 @@ const Cards = () => {
       altText: "Logistics and Warehouse",
       title: "LOGISTICS & WAREHOUSE",
       description:
-        "Explore top industrial spaces including warehouses, plants, and more built for efficiency, growth, and prime connectivity.",
+        "Explore top industrial spaces including 'A' grade warehouses, plants, and more built for efficiency, growth, and prime connectivity.",
     },
     {
       imageSrc: "/verticals/retail.png",
-      altText: "Retail Services",
-      title: "RETAIL SERVICES",
+      altText: "Retail Spaces",
+      title: "RETAIL SPACES",
       description:
         "Discover premium retail spaces in high-traffic, prime locations perfect for boutiques, flagship stores, and franchises to boost brand visibility.",
     },
@@ -63,7 +63,7 @@ const Cards = () => {
       altText: "Land Services",
       title: "LAND",
       description:
-        "Explore prime land for commercial, residential and industrial projects with high ROI potential.",
+        "Explore prime land for commercial, residential and industrial projects; Bungalows, Buildings, Farm Lands & Plots with high ROI potential.",
     },
     {
       imageSrc: "/verticals/investment.png",
