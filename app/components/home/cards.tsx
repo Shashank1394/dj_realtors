@@ -42,21 +42,21 @@ const Cards = () => {
       altText: "Commercial Real Estate",
       title: "COMMERCIAL REAL ESTATE",
       description:
-        "Discover prime commercial spaces with top-tier infrastructure to elevate your business and brand.",
-    },
-    {
-      imageSrc: "/verticals/logistics.png",
-      altText: "Logistics and Warehouse",
-      title: "LOGISTICS & WAREHOUSE",
-      description:
-        "Explore top industrial spaces including 'A' grade warehouses, plants, and more built for efficiency, growth, and prime connectivity.",
+        "Discover prime commercial spaces with top-tier infrastructure to elevate your office spaces and co-working spaces",
     },
     {
       imageSrc: "/verticals/retail.png",
       altText: "Retail Spaces",
       title: "RETAIL SPACES",
       description:
-        "Discover premium retail spaces in high-traffic, prime locations perfect for boutiques, flagship stores, and franchises to boost brand visibility.",
+        "Discover premium retail spaces in highstreets, prime locations perfect for boutiques, flagship stores, and franchises to boost brand visibility.",
+    },
+    {
+      imageSrc: "/verticals/investment.png",
+      altText: "Investment Preleased",
+      title: "INVESTMENT PRELEASED",
+      description:
+        "Secure pre-leased investment properties in prime locations with strong growth and future value potential.",
     },
     {
       imageSrc: "/verticals/land.png",
@@ -66,11 +66,11 @@ const Cards = () => {
         "Explore prime land for commercial, residential and industrial projects; Bungalows, Buildings, Farm Lands & Plots with high ROI potential.",
     },
     {
-      imageSrc: "/verticals/investment.png",
-      altText: "Investment Preleased",
-      title: "INVESTMENT PRELEASED",
+      imageSrc: "/verticals/logistics.png",
+      altText: "Logistics and Warehouse",
+      title: "LOGISTICS & WAREHOUSE",
       description:
-        "Secure pre-leased investment properties in prime locations with strong growth and future value potential.",
+        "Explore top industrial spaces including 'A' grade warehouses, plants, and more built for efficiency, growth, and prime connectivity.",
     },
     {
       imageSrc: "/verticals/residential.png",

@@ -56,7 +56,7 @@ const CategoryCard = ({
 const CategoriesPage = () => {
   const categoriesData = [
     {
-      title: "COMMERCIAL SPACES",
+      title: "COMMERCIAL REAL ESTATE",
       description:
         "Discover premium commercial spaces in prime locations. From modern offices to corporate hubs, our listings offer top-tier infrastructure and strategic positioning to support your business growth. Find the perfect space to elevate your professional presence today.",
       imageSrc: "/categories/commercial.jpg",
