@@ -9,6 +9,7 @@ const TeamPage = () => {
       department: "DJ Realtors",
       image: "/about/dj_dhamne.png",
       phone: "+919423930253",
+      email: "djdhamne@gmail.com",
     },
     {
       name: "Shrirang Bhadane",
@@ -16,6 +17,7 @@ const TeamPage = () => {
       department: "CRE | Retail",
       image: "/about/shrirang_bhadane.png",
       phone: "+919921210123",
+      email: "shrirang.djrealtors@gmail.com",
     },
     {
       name: "Prashant Nahar",
@@ -23,6 +25,7 @@ const TeamPage = () => {
       department: "Retail Vertical",
       image: "/about/prashant_nahar.png",
       phone: "+919822770646",
+      email: "nahar.djrealtors@gmail.com",
     },
     {
       name: "Harshad Kotkar",
@@ -30,6 +33,7 @@ const TeamPage = () => {
       department: "Land Vertical",
       image: "/about/harshad_kotkar.png",
       phone: "+917083111300",
+      email: "harshad.djrealtors@gmail.com",
     },
   ];
 
@@ -108,6 +112,12 @@ const TeamPage = () => {
                   {member.phone
                     ? member.phone.replace(/^(\+91)(\d{10})$/, "$1 $2")
                     : null}
+                </a>
+                <a
+                  href={`mailto:${member.email}`}
+                  className="hover:underline block mt-1"
+                >
+                  {member.email}
                 </a>
               </p>
             </div>
