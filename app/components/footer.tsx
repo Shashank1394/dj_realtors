@@ -85,7 +85,9 @@ export default function Footer() {
       <div className="border-t border-slate-800 pt-4 text-center text-xs sm:text-sm">
         ©2025 - All rights reserved by DJ Realtors | Website Designed and
         Developed by{" "}
-        <span className="font-semibold text-black">Shapes Art & Design</span>
+        <a href="https://www.shapesart.com/" type="_blank">
+          <span className="font-semibold text-black">Shapes Art & Design</span>
+        </a>
       </div>
     </motion.footer>
   );
