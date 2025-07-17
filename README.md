@@ -49,4 +49,4 @@ Web Developer | Next.js | React
 
 Have a project or feedback?
 
-📧 shashankjadhav13940@gmail.com
+📧 shashank14042004@gmail.com
